@@ -11,8 +11,6 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Vector;
 
-import static org.tensorflow.yolo.Config.IMAGE_MEAN;
-import static org.tensorflow.yolo.Config.IMAGE_STD;
 import static org.tensorflow.yolo.Config.INPUT_NAME;
 import static org.tensorflow.yolo.Config.INPUT_SIZE;
 import static org.tensorflow.yolo.Config.MODEL_FILE;

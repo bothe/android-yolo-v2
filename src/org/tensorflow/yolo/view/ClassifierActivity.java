@@ -114,10 +114,10 @@ public class ClassifierActivity extends TextToSpeechActivity implements OnImageA
     }
 
     private void fillCroppedBitmap(final Image image) {
-            Bitmap rgbFrameBitmap = Bitmap.createBitmap(previewWidth, previewHeight, Config.ARGB_8888);
-            rgbFrameBitmap.setPixels(ImageUtils.convertYUVToARGB(image, previewWidth, previewHeight),
-                    0, previewWidth, 0, 0, previewWidth, previewHeight);
-            new Canvas(croppedBitmap).drawBitmap(rgbFrameBitmap, frameToCropTransform, null);
+        Bitmap rgbFrameBitmap = Bitmap.createBitmap(previewWidth, previewHeight, Config.ARGB_8888);
+        rgbFrameBitmap.setPixels(ImageUtils.convertYUVToARGB(image, previewWidth, previewHeight),
+                0, previewWidth, 0, 0, previewWidth, previewHeight);
+        new Canvas(croppedBitmap).drawBitmap(rgbFrameBitmap, frameToCropTransform, null);
     }
 
     @Override
